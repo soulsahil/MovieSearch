@@ -36,3 +36,180 @@
     transform: rotate(360deg);
   }
 }
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.show-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.show-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.show-card h3 {
+  margin-top: 0;
+}
+
+.show-card:hover{
+  box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.5) !important;
+}
+
+.show-card p {
+  margin-bottom: 0;
+}
+
+.show-card button {
+  background-color: #DEC64D;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-card button:hover {
+  background-color: goldenrod;
+}
+
+
+.show-card button:focus {
+  outline: none;
+}
+
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.show-details-heading {
+  margin-top: 20px;
+}
+
+.show-list {
+  margin-top: 20px;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.show-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.quad{
+  color:#DEC64D;
+}
+
+.show-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.show-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.show-card:hover::before {
+  opacity: 1;
+}
+
+.show-card h3 {
+  margin-top: 0;
+}
+
+.show-card p {
+  margin-bottom: 10px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  height: 40px;
+  width: 400px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.summary_bg{
+  background-color: grey;
+  height: auto;
+}
+
+.summary_bg p {
+  text-decoration: underline;
+  line-height: 2;
+  font-weight: bold;
+  color: black;
+}
+
+.search-bar{
+  height: 40px;
+  width: 400px;
+  border-radius: 20px;
+  border: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+}
+
